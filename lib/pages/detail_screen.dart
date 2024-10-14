@@ -71,6 +71,7 @@ class DetailScreen extends StatelessWidget {
               height: 150,
               child: ListView(
                 scrollDirection: Axis.horizontal,
+                physics: BouncingScrollPhysics(),
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(4.0),
