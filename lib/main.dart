@@ -1,5 +1,6 @@
 import 'package:aplikasi_pariwisata_bandung/pages/main_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:aplikasi_pariwisata_bandung/tourism_place.dart';
 
 void main(List<String> args) {
   runApp(MyApp());
