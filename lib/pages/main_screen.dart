@@ -9,9 +9,11 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Wisata Bandung"),
+          title: Text(
+              'Wisata Bandung. Size: ${MediaQuery.of(context).size.width}'),
         ),
         body: ListView.builder(
+          physics: BouncingScrollPhysics(),
           itemBuilder: (context, index) {
             final TourismPlace place = tourismPlaceList[index];
             return InkWell(
